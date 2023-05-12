@@ -1,11 +1,12 @@
-// import "./App.css";
+import { Body } from "./components/Body";
 import { Titulo } from "./components/Titulo";
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      <Titulo />
+      <header className="header">
+        <Titulo />
+      </header>
+      <Body />
     </>
   );
 }
