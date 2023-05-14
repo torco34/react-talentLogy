@@ -1,5 +1,6 @@
 import { Body } from "./ejercicio1/Body";
 import { Ejerct2 } from "./ejercicio2/Ejerct2";
+import { Ejercici3 } from "./ejercicio3/Ejercici3";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div>
         <Ejerct2 />
       </div>
+      <Ejercici3 />
     </>
   );
 }
