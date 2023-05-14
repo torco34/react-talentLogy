@@ -9,7 +9,13 @@ export const Ejerct2 = () => {
   };
   return (
     <div>
-      <h2>Segundo Ejercicio</h2>
+      <div className="pt-4">
+        <h2>Segundo Ejercicio</h2>
+        <p className="">
+          Crear un componente que reciba como propiedad un objeto con
+          información de un usuario y muestre su nombre, edad y ciudad.
+        </p>
+      </div>
       <UserInform user={user} />
     </div>
   );
