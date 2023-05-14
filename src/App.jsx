@@ -2,6 +2,7 @@ import { Body } from "./ejercicio1/Body";
 import { Ejerct2 } from "./ejercicio2/Ejerct2";
 import { Ejercici3 } from "./ejercicio3/Ejercici3";
 import { Ejercicio4 } from "./ejercicio4/Ejercicio4";
+import { Ejercicio5 } from "./ejercicio5/Ejercicio5";
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
       <div className="container">
         <Ejercici3 />
       </div>
-      <div className="">
-        <Ejercicio4/>
+      <div className="container border">
+        <Ejercicio4 />
+      </div>
+      <div className="container border">
+        <Ejercicio5 />
       </div>
     </>
   );
