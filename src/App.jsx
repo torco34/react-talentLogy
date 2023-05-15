@@ -5,6 +5,7 @@ import { Ejercicio4 } from "./ejercicio4/Ejercicio4";
 import { Ejercicio5 } from "./ejercicio5/Ejercicio5";
 import { Ejercicio6 } from "./ejercicio6/Ejercicio6";
 import { Ejercicio7 } from "./ejercicio7/Ejercicio7";
+import { Ejercicio8 } from "./ejercicio8/Ejercicio8";
 
 function App() {
   return (
@@ -36,6 +37,14 @@ function App() {
           cantidad de días que faltan para esa fecha.
         </p>
         <Ejercicio7 />
+      </div>
+
+      <div className="container border pt-4">
+        <p>
+          Crear un componente que reciba como propiedad un número y muestre un
+          contador que se incrementa en uno cada segundo.
+        </p>
+        <Ejercicio8 />
       </div>
     </>
   );
