@@ -4,6 +4,7 @@ import { Ejercici3 } from "./ejercicio3/Ejercici3";
 import { Ejercicio4 } from "./ejercicio4/Ejercicio4";
 import { Ejercicio5 } from "./ejercicio5/Ejercicio5";
 import { Ejercicio6 } from "./ejercicio6/Ejercicio6";
+import { Ejercicio7 } from "./ejercicio7/Ejercicio7";
 
 function App() {
   return (
@@ -28,6 +29,13 @@ function App() {
       </div>
       <div className="container border">
         <Ejercicio6 />
+      </div>
+      <div className="container border pt-4">
+        <p>
+          Crear un componente que reciba como propiedad una fecha y muestre la
+          cantidad de días que faltan para esa fecha.
+        </p>
+        <Ejercicio7 />
       </div>
     </>
   );
