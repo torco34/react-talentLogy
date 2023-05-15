@@ -6,6 +6,7 @@ import { Ejercicio5 } from "./ejercicio5/Ejercicio5";
 import { Ejercicio6 } from "./ejercicio6/Ejercicio6";
 import { Ejercicio7 } from "./ejercicio7/Ejercicio7";
 import { Ejercicio8 } from "./ejercicio8/Ejercicio8";
+import { Ejercicio9 } from "./ejercicio9/Ejercicio9";
 
 function App() {
   return (
@@ -45,6 +46,13 @@ function App() {
           contador que se incrementa en uno cada segundo.
         </p>
         <Ejercicio8 />
+      </div>
+      <div className="container border pt-4">
+        <p>
+          Crear un componente que reciba como propiedad una lista de nombres y
+          muestre un input para filtrar los nombres por letras.
+        </p>
+        <Ejercicio9 />
       </div>
     </>
   );
