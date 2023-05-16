@@ -13,6 +13,7 @@ import { Ejercicio6 } from "./ejercicio6/Ejercicio6";
 import { Ejercicio7 } from "./ejercicio7/Ejercicio7";
 import { Ejercicio8 } from "./ejercicio8/Ejercicio8";
 import { Ejercicio9 } from "./ejercicio9/Ejercicio9";
+import { Ejercicio16 } from "./ejercicio16/Ejercicio16";
 
 function App() {
   return (
@@ -116,6 +117,16 @@ function App() {
           cultura, historia, idioma y lugares turísticos.
         </p>
         <Ejercicio15 />
+      </div>
+
+      <div className="container border pt-4">
+        <h2>Ejercicio 16</h2>
+        <p>
+          User Crear un componente que muestre una lista de países y al
+          seleccionar uno de ellos, muestre información detallada sobre su
+          cultura, historia, idioma y lugares turísticos.
+        </p>
+        <Ejercicio16 />
       </div>
     </>
   );
