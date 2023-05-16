@@ -1,6 +1,7 @@
 import { Body } from "./ejercicio1/Body";
 import { Ejercicio10 } from "./ejercicio10/Ejercicio10";
 import { Ejercicio11 } from "./ejercicio11/Ejercicio11";
+import { Card } from "./ejercicio12/Card";
 import { Ejerct2 } from "./ejercicio2/Ejerct2";
 import { Ejercici3 } from "./ejercicio3/Ejercici3";
 import { Ejercicio4 } from "./ejercicio4/Ejercicio4";
@@ -74,6 +75,16 @@ function App() {
           mostrarse su información detallada en una sección aparte.
         </p>
         <Ejercicio11 />
+      </div>
+      <div className="container border pt-4">
+        <h2>Ejercicio 12</h2>
+        <p>
+          Crear un componente que reciba como propiedad un arreglo de objetos
+          con información de usuarios y muestre una lista con sus nombres y
+          correos electrónicos. Al hacer clic en un usuario de la lista, debe
+          mostrarse su información detallada en una sección aparte.
+        </p>
+        <Card />
       </div>
     </>
   );
