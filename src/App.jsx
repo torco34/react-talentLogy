@@ -1,4 +1,5 @@
 import { Body } from "./ejercicio1/Body";
+import { Ejercicio10 } from "./ejercicio10/Ejercicio10";
 import { Ejerct2 } from "./ejercicio2/Ejerct2";
 import { Ejercici3 } from "./ejercicio3/Ejercici3";
 import { Ejercicio4 } from "./ejercicio4/Ejercicio4";
@@ -53,6 +54,15 @@ function App() {
           muestre un input para filtrar los nombres por letras.
         </p>
         <Ejercicio9 />
+      </div>
+
+      <div className="container border pt-4">
+        <h2>Ejercicio 10</h2>
+        <p>
+          Crear un componente que reciba como propiedad una lista de imágenes y
+          muestre un carrusel para navegar entre ellas.
+        </p>
+        <Ejercicio10/>
       </div>
     </>
   );
