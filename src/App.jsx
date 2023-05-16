@@ -14,6 +14,7 @@ import { Ejercicio7 } from "./ejercicio7/Ejercicio7";
 import { Ejercicio8 } from "./ejercicio8/Ejercicio8";
 import { Ejercicio9 } from "./ejercicio9/Ejercicio9";
 import { Ejercicio16 } from "./ejercicio16/Ejercicio16";
+import { Ejercicio17 } from "./ejercicio17/Ejercicio17";
 
 function App() {
   return (
@@ -127,6 +128,11 @@ function App() {
           cultura, historia, idioma y lugares turísticos.
         </p>
         <Ejercicio16 />
+      </div>
+      <div className="container border pt-4">
+        <h2>Ejercicio 16</h2>
+        <p></p>
+        <Ejercicio17/>
       </div>
     </>
   );
