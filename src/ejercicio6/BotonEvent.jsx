@@ -6,7 +6,9 @@ export const BotonEvent = () => {
   };
   return (
     <div>
-      <button onClick={handleClick}>Mostrar mensaje</button>
+      <button className="btn btn-light text-" onClick={handleClick}>
+        Mostrar mensaje
+      </button>
 
       {showMessage && <p>Hola, has hecho clic en el botón.</p>}
     </div>

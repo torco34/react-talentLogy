@@ -28,9 +28,7 @@ function App() {
         <Index />
       </div>
       <div className="container">{/* <Ejerct2 /> */}</div>
-      <div className="container">
-        <Ejercici3 />
-      </div>
+      <div className="container">{/* <Ejercici3 /> */}</div>
       <div className="container border">
         <Ejercicio4 />
       </div>

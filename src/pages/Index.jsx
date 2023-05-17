@@ -5,6 +5,9 @@ import Col from "react-bootstrap/Col";
 import "./Index.css";
 import { Ejercicio2 } from "../ejercicio2/Ejercicio2";
 import { Ejercici3 } from "../ejercicio3/Ejercici3";
+import { Ejercicio4 } from "../ejercicio4/Ejercicio4";
+import { Ejercicio5 } from "../ejercicio5/Ejercicio5";
+import { Ejercicio6 } from "../ejercicio6/Ejercicio6";
 export const Index = () => {
   return (
     <Container className="cuerpo">
@@ -20,9 +23,13 @@ export const Index = () => {
         </Col>
       </Row>
       <Row>
-        <Col>1 of 3</Col>
-        <Col>2 of 3</Col>
-        <Col>3 of 3</Col>
+        <Col>
+          <Ejercicio4 />
+        </Col>
+        <Col>
+          <Ejercicio5 />
+        </Col>
+        <Col><Ejercicio6/></Col>
       </Row>
     </Container>
   );
