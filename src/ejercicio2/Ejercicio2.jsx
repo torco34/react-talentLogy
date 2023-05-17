@@ -15,6 +15,7 @@ export const Ejercicio2 = () => {
           información de un usuario y muestre su nombre, edad y ciudad.
         </p>
         <div className="border pt-3">
+          <h5>Resultado:</h5>
           <UserInform user={user} />
         </div>
       </div>

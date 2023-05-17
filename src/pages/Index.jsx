@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Index.css";
 import { Ejercicio2 } from "../ejercicio2/Ejercicio2";
+import { Ejercici3 } from "../ejercicio3/Ejercici3";
 export const Index = () => {
   return (
     <Container className="cuerpo">
@@ -14,7 +15,9 @@ export const Index = () => {
         <Col>
           <Ejercicio2 />
         </Col>
-        <Col>3 of 3</Col>
+        <Col>
+          <Ejercici3 />
+        </Col>
       </Row>
       <Row>
         <Col>1 of 3</Col>
