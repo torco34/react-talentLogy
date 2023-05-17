@@ -1,11 +1,10 @@
-import { Body } from "./ejercicio1/Body";
 import { Ejercicio10 } from "./ejercicio10/Ejercicio10";
 import { Ejercicio11 } from "./ejercicio11/Ejercicio11";
 import { Card } from "./ejercicio12/Card";
 import { Ejercicio13 } from "./ejercicio13/Ejercicio13";
 import { Ejercicio14 } from "./ejercicio14/Ejercicio14";
 import { Ejercicio15 } from "./ejercicio15/Ejercicio15";
-import { Ejerct2 } from "./ejercicio2/Ejerct2";
+// import { Ejerct2 } from "./ejercicio2/Ejercicio2";
 import { Ejercici3 } from "./ejercicio3/Ejercici3";
 import { Ejercicio4 } from "./ejercicio4/Ejercicio4";
 import { Ejercicio5 } from "./ejercicio5/Ejercicio5";
@@ -15,19 +14,20 @@ import { Ejercicio8 } from "./ejercicio8/Ejercicio8";
 import { Ejercicio9 } from "./ejercicio9/Ejercicio9";
 import { Ejercicio16 } from "./ejercicio16/Ejercicio16";
 import { Ejercicio17 } from "./ejercicio17/Ejercicio17";
+import { Galeria } from "./ejercicio18/Galeria";
+import { Index } from "./pages/Index";
 
 function App() {
   return (
     <>
-      <header className="header text-center p-3">
+      <header className="header  p-3">
         <h2>Ejercicio con React.js</h2>
       </header>
-      <div className="container">
-        <Body />
+
+      <div className="container border">
+        <Index />
       </div>
-      <div className="container">
-        <Ejerct2 />
-      </div>
+      <div className="container">{/* <Ejerct2 /> */}</div>
       <div className="container">
         <Ejercici3 />
       </div>
@@ -132,7 +132,16 @@ function App() {
       <div className="container border pt-4">
         <h2>Ejercicio 16</h2>
         <p></p>
-        <Ejercicio17/>
+        <Ejercicio17 />
+      </div>
+
+      <div className="container border pt-4">
+        <h2>Ejercicio 18</h2>
+        <p>
+          Crear un componente que muestre una lista de fotos y permita
+          seleccionar y eliminar fotos de la lista.
+        </p>
+        <Galeria />
       </div>
     </>
   );
