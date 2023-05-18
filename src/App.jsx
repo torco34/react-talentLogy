@@ -4,9 +4,8 @@ import { Card } from "./ejercicio12/Card";
 import { Ejercicio13 } from "./ejercicio13/Ejercicio13";
 import { Ejercicio14 } from "./ejercicio14/Ejercicio14";
 import { Ejercicio15 } from "./ejercicio15/Ejercicio15";
-// import { Ejerct2 } from "./ejercicio2/Ejercicio2";
-import { Ejercici3 } from "./ejercicio3/Ejercici3";
-import { Ejercicio4 } from "./ejercicio4/Ejercicio4";
+
+// import { Ejercicio4 } from "./ejercicio4/Ejercicio4";
 import { Ejercicio5 } from "./ejercicio5/Ejercicio5";
 import { Ejercicio6 } from "./ejercicio6/Ejercicio6";
 import { Ejercicio7 } from "./ejercicio7/Ejercicio7";
@@ -17,21 +16,41 @@ import { Ejercicio17 } from "./ejercicio17/Ejercicio17";
 import { Galeria } from "./ejercicio18/Galeria";
 import { Index } from "./pages/Index";
 
+import { useState } from "react";
+import { Pages2 } from "./pages/Pages2";
+
 function App() {
+  const [mostrarComponente, setMostrarComponente] = useState(false);
+  const [mostrarPages2, setMostrarPages2] = useState(false);
+  function handleEventoClick() {
+    if (!mostrarComponente) {
+      setMostrarComponente(true);
+    } else {
+      setMostrarComponente(false);
+    }
+  }
+  function handlePages2() {
+    if (!mostrarPages2) {
+      setMostrarPages2(true);
+    } else {
+      setMostrarPages2(false);
+    }
+  }
   return (
     <>
       <header className="header  p-3">
         <h2>Ejercicio con React.js</h2>
       </header>
-
-      <div className="container border">
-        <Index />
+      <div className="">
+        <button onClick={handleEventoClick}>Mostrar Componente</button>
+        <button onClick={handlePages2}>Pages2</button>
+        {!mostrarComponente ? <Index /> : null}
+        {!mostrarPages2 ? <Pages2 /> : null}
       </div>
+      <div className="container border">{/* <Index /> */}</div>
       <div className="container">{/* <Ejerct2 /> */}</div>
       <div className="container">{/* <Ejercici3 /> */}</div>
-      <div className="container border">
-        <Ejercicio4 />
-      </div>
+      <div className="container border">{/* <Ejercicio4 /> */}</div>
       <div className="container border">
         <Ejercicio5 />
       </div>

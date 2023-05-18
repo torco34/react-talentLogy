@@ -1,6 +1,7 @@
 import { useState } from "react";
-
-export const CarruselImge = ({ images }) => {
+import images from "./images";
+import "./Index.css";
+export const CarruselImge = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -16,11 +17,11 @@ export const CarruselImge = ({ images }) => {
 
   return (
     <div>
-      <div>
+      <div className="image">
         <button onClick={handlePrevClick}>Previous</button>
         <img
           src={images[currentImageIndex]}
-          alt={`Image ${currentImageIndex + 1}`}
+          alt={`Image ${currentImageIndex - 1}`}
         />
         <button onClick={handleNextClick}>Next</button>
       </div>
