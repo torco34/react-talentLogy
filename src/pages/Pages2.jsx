@@ -10,10 +10,9 @@ import { Ejercicio11 } from "../ejercicio11/Ejercicio11";
 import { Card } from "../ejercicio12/Card";
 // import { Carrito } from "../ejercicio12/Carrito";
 
-
 export const Pages2 = () => {
   return (
-    <div className="">
+    <div className="pages">
       <Container>
         <Row>
           <Col>
@@ -34,7 +33,7 @@ export const Pages2 = () => {
             <Ejercicio11 />
           </Col>
           <Col>
-           <Card/>
+            <Card />
           </Col>
         </Row>
       </Container>

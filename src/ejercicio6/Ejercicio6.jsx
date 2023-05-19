@@ -9,7 +9,7 @@ export const Ejercicio6 = () => {
           Crear un componente que muestre un botón y al hacer clic en él, cambie
           el estado del componente y muestre un mensaje.
         </p>
-        <div className="border pt-3">
+        <div className=" pt-3">
           <h5>Resultado:</h5>
           <BotonEvent />
         </div>

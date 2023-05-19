@@ -11,7 +11,7 @@ export const Ejercicio9 = () => {
           Crear un componente que reciba como propiedad una lista de nombres y
           muestre un input para filtrar los nombres por letras.
         </p>
-        <div className="border pt-3">
+        <div className=" pt-3">
           <h5>Resultado:</h5>
           <ListFilter names={names} />
         </div>

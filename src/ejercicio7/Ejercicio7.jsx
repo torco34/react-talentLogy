@@ -9,7 +9,7 @@ export const Ejercicio7 = () => {
           Crear un componente que reciba como propiedad una fecha y muestre la
           cantidad de días que faltan para esa fecha.
         </p>
-        <div className="border pt-3">
+        <div className="pt-3">
           <h5>Resultado:</h5>
           <Countdown fecha="12/08/2023" />
         </div>

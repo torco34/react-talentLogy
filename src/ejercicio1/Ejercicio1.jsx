@@ -8,7 +8,7 @@ export const Ejercicio1 = () => {
         <p>
           Crear un componente que renderice un título y un párrafo de texto.
         </p>
-        <div className="border">
+        <div className="">
           <TituloTexto
             titulo="El titulo"
             texto="Este es el texto que me pidieron"

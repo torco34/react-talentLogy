@@ -10,8 +10,8 @@ export const Ejercicio4 = () => {
           Crear un componente que reciba como propiedad un arreglo de números y
           muestre la suma de sus valores.
         </p>
-        <div className="border pt-3">
-          <h5>Resultado:</h5>
+        <div className="pt-3">
+          <h5>Resultado de : {number}</h5>
           <NumberSumar number={number} />
         </div>
       </div>

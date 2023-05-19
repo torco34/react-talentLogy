@@ -3,9 +3,9 @@ import { ProductTabla } from "./ProductTabla";
 
 export const Ejercicio5 = () => {
   const products = [
-    { nombre: "Producto 1", precio: 10 },
-    { nombre: "Producto 2", precio: 20 },
-    { nombre: "Producto 3", precio: 30 },
+    { nombre: "Producto 1 :", precio: 10 },
+    { nombre: "Producto 2  :", precio: 20 },
+    { nombre: "Producto 3 : ", precio: 30 },
   ];
   return (
     <div>
@@ -16,7 +16,7 @@ export const Ejercicio5 = () => {
           con información de productos y renderice una tabla con los nombres y
           precios de cada producto.
         </p>
-        <div className="border pt-3">
+        <div className=" pt-2">
           <h5>Resultado:</h5>
           <ProductTabla products={products} />
         </div>

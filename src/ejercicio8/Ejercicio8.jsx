@@ -9,7 +9,7 @@ export const Ejercicio8 = () => {
           Crear un componente que reciba como propiedad un número y muestre un
           contador que se incrementa en uno cada segundo.
         </p>
-        <div className="border pt-3">
+        <div className=" pt-3">
           <h5>Resultado:</h5>
           <Counter number={42} stop={true} />
         </div>

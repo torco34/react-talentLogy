@@ -10,7 +10,7 @@ export const Ejercici3 = () => {
           una lista de elementos HTML con tantos elementos como el número
           indicado
         </p>
-        <div className="border pt-3">
+        <div className=" pt-3">
           <h5>Resultado:</h5>
           <Number numbers={5} />
         </div>
