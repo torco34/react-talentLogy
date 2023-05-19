@@ -1,6 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 
-export const Books = ({book}) => {
+export const Books = ({ book }) => {
   const [comments, setComments] = useState([]);
 
   const handleAddComment = (event) => {
@@ -12,11 +12,11 @@ export const Books = ({book}) => {
   return (
     <div>
       <div>
-        <h1>{book.title}</h1>
+        <h3>{book.title}</h3>
         <p>Author: {book.author}</p>
         <p>Genre: {book.genre}</p>
 
-        <h2>Comments</h2>
+        <h2>Comentario</h2>
         <ul>
           {comments.map((comment, index) => (
             <li key={index}>{comment}</li>
@@ -24,7 +24,7 @@ export const Books = ({book}) => {
         </ul>
 
         <form onSubmit={handleAddComment}>
-          <input type="text" name="comment" placeholder="Add a comment" />
+          <input type="text" name="comment" placeholder="Agregar comentarios" />
           <button type="submit">Submit</button>
         </form>
       </div>
