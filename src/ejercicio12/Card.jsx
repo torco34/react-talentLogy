@@ -22,7 +22,7 @@ export const Card = () => {
         </div>
       ))}
       <div className="border">
-        <Carrito cartItems={cart} />
+        <Carrito />
       </div>
     </div>
   );

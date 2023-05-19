@@ -1,0 +1,25 @@
+.name {
+  background-color: #e0be81;
+}
+.lista {
+  text-decoration: none;
+}
+.lista li {
+  text-decoration: none;
+  list-style: none;
+  color: #025464;
+  /* background-color: #E57C23; */
+  cursor: pointer;
+}
+.lista p {
+  text-decoration: none;
+  list-style: none;
+  /* color: #025464; */
+  /* background-color: #E57C23; */
+  cursor: pointer;
+}
+.body {
+  background-color: #e57c23;
+  color: aliceblue;
+  padding: 20px;
+}

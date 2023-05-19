@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./index.css";
 export const List = ({ users }) => {
   const [selectedUser, setSelectedUser] = useState(null);
   const handleUserClick = (user) => {
@@ -8,7 +8,7 @@ export const List = ({ users }) => {
   return (
     <div>
       <h2>User Lista</h2>
-      <ul>
+      <ul className="lista">
         {users.map((user) => (
           <li key={user.id} onClick={() => handleUserClick(user)}>
             {user.name} - {user.email}
@@ -16,8 +16,8 @@ export const List = ({ users }) => {
         ))}
       </ul>
       {selectedUser && (
-        <div>
-          <h2>Selected User</h2>
+        <div className="body">
+          <h2>Lista</h2>
           <p>Name: {selectedUser.name}</p>
           <p>Email: {selectedUser.email}</p>
           {/* Render any other detailed user information here */}
