@@ -1,4 +1,4 @@
-const Products = [
+const products = [
   {
     id: 1,
     name: "Sueter",
@@ -79,4 +79,4 @@ const Products = [
       "Auriculares con caja de regalo. representación 3d aislada sobre fondo blanco",
   },
 ];
-export default Products;
+export default products;

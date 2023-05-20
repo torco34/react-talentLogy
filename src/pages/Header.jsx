@@ -49,8 +49,8 @@ navbars.push({
 });
 
 navbars.push({
-  to: "/sig",
-  text: "Sin Up",
+  to: "/pages1",
+  text: "carrito",
 });
 navbars.push({
   to: "/login",
