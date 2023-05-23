@@ -7,7 +7,12 @@ export const Product = ({ product, addToCart }) => {
         <img src={product.image} />
         <h3>{product.name}</h3>
         <p>Precio: {product.price}</p>
-        <button onClick={() => addToCart(product)}>Agregar al carrito</button>
+        <button
+          onClick={() => addToCart(product)}
+          className="btn btn-secondary"
+        >
+          Agregar al carrito
+        </button>
       </div>
     </div>
   );

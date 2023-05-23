@@ -10,14 +10,17 @@ import { BsFillCartFill } from "react-icons/bs";
 export const Ejercicio12 = () => {
   const [cartItems, setCartItems] = useState([]);
   const [cartShow, setCartShow] = useState(false);
+  const [contador, setContador] = useState(0);
   const addToCart = (product) => {
     setCartItems([...cartItems, product]);
+    setContador(contador + 1);
   };
 
   const removeFromCart = (index) => {
     const updatedCartItems = [...cartItems];
     updatedCartItems.splice(index, 1);
     setCartItems(updatedCartItems);
+    setContador(contador - 1);
   };
   function showCart() {
     if (cartShow) {
@@ -34,7 +37,7 @@ export const Ejercicio12 = () => {
         <Row>
           <Col lg={8}>
             {" "}
-            <div className=" cart">
+            <div className="cart border-end">
               {products.map((product) => (
                 <Product
                   key={product.id}
@@ -45,8 +48,9 @@ export const Ejercicio12 = () => {
             </div>
           </Col>
           <Col>
-            <button onClick={showCart} className=" btnCarrito">
+            <button onClick={showCart} className="btnCarrito">
               <BsFillCartFill />
+              <span>{contador}</span>
             </button>
             {!cartShow ? (
               <Cart cartItems={cartItems} removeFromCart={removeFromCart} />

@@ -3,20 +3,28 @@ import PropTypes from "prop-types";
 import "./Cart.css";
 export const Cart = ({ cartItems, removeFromCart }) => {
   return (
-    <div className="carrit">
+    <div className="carrit bg-info">
       <h2>Carrito de compras</h2>
+      <h2>Total $:</h2>
       {cartItems.length === 0 ? (
         <p>El carrito está vacío.</p>
       ) : (
-        <ul>
-          {cartItems.map((item, index) => (
-            <li key={index}>
-              {item.name} - Precio: {item.price}
-              <img src={item.image} alt="imgen" />
-              <button onClick={() => removeFromCart(index)}>Eliminar</button>
-            </li>
-          ))}
-        </ul>
+        <div className="bg-info">
+          <ul className="">
+            {cartItems.map((item, index) => (
+              <li key={index}>
+                <div className="card p-4">
+                  <img src={item.image} alt="imgen" />
+                  {item.name}
+                  {item.price}
+                  <button onClick={() => removeFromCart(index)}>
+                    Eliminar
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   );
