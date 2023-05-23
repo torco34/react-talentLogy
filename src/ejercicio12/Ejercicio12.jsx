@@ -31,9 +31,9 @@ export const Ejercicio12 = () => {
   }
 
   return (
-    <div>
+    <div className="containerCarrito">
       <Container>
-        <h2 className="text-center text-info">Carrito de compras</h2>
+        <h2 className="text-center ">Carrito de compras</h2>
         <Row>
           <Col lg={8}>
             {" "}
