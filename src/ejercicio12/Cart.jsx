@@ -1,9 +1,9 @@
 // import React from 'react';
 import PropTypes from "prop-types";
-
+import "./Cart.css";
 export const Cart = ({ cartItems, removeFromCart }) => {
   return (
-    <div>
+    <div className="carrit">
       <h2>Carrito de compras</h2>
       {cartItems.length === 0 ? (
         <p>El carrito está vacío.</p>

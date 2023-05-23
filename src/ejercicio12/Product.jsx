@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 export const Product = ({ product, addToCart }) => {
   return (
     <div>
-      <div className="">
-        <h3>{product.name}</h3>
+      <div className="card p-5">
         <img src={product.image} />
+        <h3>{product.name}</h3>
         <p>Precio: {product.price}</p>
         <button onClick={() => addToCart(product)}>Agregar al carrito</button>
       </div>
