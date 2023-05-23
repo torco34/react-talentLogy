@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Index } from "./pages/Index";
-import { Header } from "./pages/Header";
+import { Header } from "./components/Header";
 import { Pages2 } from "./pages/Pages2";
 import { CarritoCompras } from "./pages/CarritoCompras";
+import { Books } from "./pages/Books";
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="home" element={<Index />}></Route>
+          <Route path="/" element={<Index />}></Route>
           <Route path="/pages" element={<Pages2 />}></Route>
           <Route path="/pages1" element={<CarritoCompras />}></Route>
+          <Route path="/pages2" element={<Books />}></Route>
         </Routes>
       </Router>
     </>

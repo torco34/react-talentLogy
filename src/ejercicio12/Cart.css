@@ -1,7 +1,7 @@
 .containerCarrito {
-  background-color: #526d82;
+  background-color: #dde6ed;
   padding: 30px;
-  color: #dde6ed;
+  color: #27374d;
 }
 
 .cart {
@@ -11,20 +11,18 @@
   padding: 20px;
   gap: 10px;
   color: #27374d;
-  /* background-color: #9db2bf; */
+  background-color: #dde6ed;
 }
 .cart img {
   width: 100%;
   display: flex;
   align-items: center;
-  /*border: solid #27374d 2px;
-  */border-radius: 10px;
+  border-radius: 10px;
   /*-webkit-border-radius: 10px;
   -moz-border-radius:;
   -ms-border-radius:;
   -o-border-radius:;
-   */:;
-  -webkit-border-radius:;
+   */
 }
 
 .cart button {
@@ -36,7 +34,7 @@
   color: #27374d;
   font-size: 30px;
   width: 100%;
-  /* background-color: transparent; */
+
   background-color: #dde6ed;
   border: transparent;
 }
@@ -46,12 +44,7 @@
   padding: 6px;
   border-radius: 10%;
   background-color: #27374d;
-  /*-webkit-border-radius: 90%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
- 
-  */
+  
 }
 
 .carrit {

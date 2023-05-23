@@ -10,7 +10,7 @@ export const Cart = ({ cartItems, removeFromCart }) => {
   }
   return (
     <div className="carrit">
-      <h2>Carrito de compras</h2>
+      <h2>Carrito de Compras</h2>
       <h2>Total $:{calculPrice()}</h2>
       {cartItems.length === 0 ? (
         <p>El carrito está vacío.</p>

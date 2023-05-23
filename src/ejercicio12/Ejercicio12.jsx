@@ -37,7 +37,7 @@ export const Ejercicio12 = () => {
         <Row>
           <Col lg={8}>
             {" "}
-            <div className="cart border-end">
+            <div className="cart border-end border-dark  border-5">
               {products.map((product) => (
                 <Product
                   key={product.id}

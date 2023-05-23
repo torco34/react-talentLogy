@@ -16,9 +16,6 @@ export const Pages2 = () => {
           <Col>
             <Ejercicio11 />
           </Col>
-          <Col>
-            <Ejercicio13 />
-          </Col>
         </Row>
       </Container>
     </div>

@@ -1,19 +1,35 @@
-import { Books } from "./Books";
+import { useState } from "react";
 
+import books from "./books";
+import { Books } from "./Books";
+// import { ProductBook } from "./ProductBook";
 export const Ejercicio13 = () => {
-  const book = {
-    title: "El Señor de los Anillos",
-    author: "John Ronald Reuel Tolkien",
-    genre: "Fiction",
+  const [comments, setComments] = useState([]);
+
+  const handleAddComment = (event) => {
+    event.preventDefault();
+    const comment = event.target.comment.value;
+    setComments([...comments, comment]);
+    event.target.comment.value = "";
   };
   return (
-    <div className="pt-4">
+    <div className="container ">
       <h2>Ejercicio 13</h2>
       <p className="">
-        Crear un componente que reciba como propiedad una lista de imágenes y
-        muestre un carrusel para navegar entre ellas.
+        Crear un componente que reciba como propiedad un objeto con información
+        de un libro y permita añadir comentarios a una sección de comentarios en
+        la misma página.
       </p>
-      <Books book={book} />
+
+      <div className="comtainerEjercicio">
+        {books.map((book) => (
+          <Books
+            key={book.id}
+            book={book}
+            handleAddComment={handleAddComment}
+          />
+        ))}
+      </div>
     </div>
   );
 };

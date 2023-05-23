@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import "./Book.css";
 export const Books = ({ book }) => {
   const [comments, setComments] = useState([]);
 
@@ -9,12 +10,14 @@ export const Books = ({ book }) => {
     setComments([...comments, comment]);
     event.target.comment.value = "";
   };
+
   return (
     <div>
-      <div>
-        <h3>{book.title}</h3>
+      <div className="containerLibro">
+        <img src={book.image} alt="" />
+        <h3>{book.name}</h3>
         <p>Author: {book.author}</p>
-        <p>Genre: {book.genre}</p>
+        <p>description: {book.description}</p>
 
         <h2>Comentario</h2>
         <ul>
@@ -25,7 +28,6 @@ export const Books = ({ book }) => {
 
         <form onSubmit={handleAddComment}>
           <input type="text" name="comment" placeholder="Agregar comentarios" />
-          <button type="submit">Submit</button>
         </form>
       </div>
     </div>
