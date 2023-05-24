@@ -1,0 +1,11 @@
+.link {
+    display: flex;
+    margin: 10px;
+}
+
+.link li a{
+    display: flex;
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+}

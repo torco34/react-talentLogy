@@ -13,7 +13,7 @@ export const Books = ({ book }) => {
 
   return (
     <div>
-      <div className="containerLibro">
+      <div className="containerLibro  card">
         <img src={book.image} alt="" />
         <h3>{book.name}</h3>
         <p>Author: {book.author}</p>

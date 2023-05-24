@@ -34,7 +34,14 @@ export const Ejercicio12 = () => {
     <div className="containerCarrito">
       <Container>
         <h2 className="text-center ">Carrito de compras</h2>
+        <h2>Ejercico 12 </h2>
         <Row>
+          <p>
+            Crear un componente que reciba como propiedad un arreglo de objetos
+            con información de productos y muestre una lista con su nombre,
+            descripción y precio. Además, debe incluir un botón de "Agregar al
+            carrito" que permita añadir productos a un carrito virtual.
+          </p>
           <Col lg={8}>
             {" "}
             <div className="cart border-end border-dark  border-5">
