@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    img: "https://as01.epimg.net/meristation/imagenes/2021/07/07/noticias/1625672419_027507_1625737913_sumario_normal.jpg",
+    img: "https://c8.alamy.com/compes/2g7appp/el-senor-de-los-anillos-la-comunidad-del-anillo-2001-dirigida-por-peter-jackson-y-protagonizada-por-elijah-wood-ian-mckellen-orlando-bloom-y-sean-bean-adaptacion-epica-de-j-r-r-libro-de-tolkien-sobre-un-grupo-que-busca-destruir-un-anillo-peligroso-2g7appp.jpg",
     name: "Senor de los anillos",
     description: "Los  al titular de los derechos de autor de dicha obra.",
   },
@@ -14,7 +14,7 @@ const data = [
   },
   {
     id: 3,
-    img: "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/04/2012.jpg",
+    img: "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/peliculas/bienvenidos-al-fin-del-mundo/6726642-5-esl-ES/Bienvenidos-al-fin-del-mundo.jpg?resize=320:*",
     name: "Fin de mundo",
     description:
       "Miguel es un niño que sueña con ser músico, pero su familia se lo prohíbe porque su tatarabuelo,",

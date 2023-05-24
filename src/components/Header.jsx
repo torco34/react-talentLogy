@@ -60,3 +60,7 @@ navbars.push({
   to: "/pages3",
   text: "Países",
 });
+navbars.push({
+  to: "/pages4",
+  text: "Section3",
+});
