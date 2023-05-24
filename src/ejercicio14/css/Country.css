@@ -1,0 +1,9 @@
+.containers li {
+  list-style: none;
+  cursor: pointer;
+  color: #526d82;
+}
+.containers li:hover {
+    
+    color: #1d4767;
+  }

@@ -27,6 +27,11 @@ export const Ejercicio15 = () => {
 
   return (
     <div>
+      <h5>Ejercicio 15</h5>
+      <p>
+        Crear un componente que reciba como propiedad una lista de noticias y
+        permita filtrarlas por fecha, categoría y palabras clave.
+      </p>
       <Filter news={news} />
     </div>
   );

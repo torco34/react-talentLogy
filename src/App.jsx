@@ -4,7 +4,7 @@ import { Header } from "./components/Header";
 import { Pages2 } from "./pages/Pages2";
 import { CarritoCompras } from "./pages/CarritoCompras";
 import { Books } from "./pages/Books";
-import { Ejercicio } from "./pages/Ejercicio";
+import { PagesEjercicio } from "./pages/PagesEjercicio";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/pages" element={<Pages2 />}></Route>
           <Route path="/pages1" element={<CarritoCompras />}></Route>
           <Route path="/pages2" element={<Books />}></Route>
-          <Route path="/pages3" element={<Ejercicio />}></Route>
+          <Route path="/pages3" element={<PagesEjercicio />}></Route>
         </Routes>
       </Router>
     </>
