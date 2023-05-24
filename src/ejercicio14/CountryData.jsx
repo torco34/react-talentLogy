@@ -19,12 +19,9 @@ export const CountryData = ({ dataLibro }) => {
               {dataLibro.map((country, index) => (
                 <li key={index} onClick={() => handleCountrySelect(country)}>
                   {country.name}
-                  {/* {country.culture} */}
                 </li>
               ))}
             </ul>
-          </Col>
-          <Col>
             {selectedCountry && (
               <div>
                 <h2>Información detallada:</h2>
@@ -36,6 +33,7 @@ export const CountryData = ({ dataLibro }) => {
               </div>
             )}
           </Col>
+          <Col></Col>
         </Row>
       </Container>
     </div>
