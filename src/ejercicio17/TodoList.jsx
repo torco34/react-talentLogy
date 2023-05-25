@@ -75,22 +75,37 @@ function TodoList() {
           <input
             type="submit"
             value={editIndex === -1 ? "Agregar tarea" : "Actualizar tarea"}
+            className="input"
           />
         </form>
       </div>
       <h2>Tareas Pendientes</h2>
       <ul>
         {tasks.map((task, index) => (
-          <li key={index}>
-            <strong>{task.name}</strong>
-            <br />
-            {task.description}
-            <br />
-            <em>Fecha de vencimiento: {task.dueDate}</em>
-            <br />
-            <button onClick={() => editTask(index)}>Editar</button>
-            <button onClick={() => deleteTask(index)}>Eliminar</button>
-          </li>
+          <div className="tarea card">
+            <li key={index}>
+              <strong>{task.name}</strong>
+              <br />
+              {task.description}
+              <br />
+              <em>Fecha de vencimiento: {task.dueDate}</em>
+              <br />
+              <div className="botones">
+                <button
+                  onClick={() => editTask(index)}
+                  className="btn btn-secondary"
+                >
+                  Editar
+                </button>
+                <button
+                  onClick={() => deleteTask(index)}
+                  className="btn btn-secondary"
+                >
+                  Eliminar
+                </button>
+              </div>
+            </li>
+          </div>
         ))}
       </ul>
     </div>

@@ -1,7 +1,37 @@
 .form {
+  /* border: solid 3px red; */
+
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+
   flex-direction: column;
-  border: solid 3px red;
+  margin-top: 20px;
+  padding: 30px;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.input {
+  background-color: #526d82;
+  color: aliceblue;
+}
+.tarea li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.botones button {
+  margin: 20px;
+  background-color: #526d82;
+  color: aliceblue;
 }

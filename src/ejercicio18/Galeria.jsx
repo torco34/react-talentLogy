@@ -1,23 +1,45 @@
 import { useState } from "react";
 import Photo from "./Photo";
 export const Galeria = () => {
+  const [selectedPhotos, setSelectedPhotos] = useState([]);
+
   const [photos, setPhotos] = useState(Photo);
 
-  const deletePhoto = (photoId) => {
-    const updatedPhotos = photos.filter((photo) => photo.id !== photoId);
-    setPhotos(updatedPhotos);
+  const handlePhotoClick = (photoId) => {
+    if (selectedPhotos.includes(photoId)) {
+      setSelectedPhotos(selectedPhotos.filter((id) => id !== photoId));
+    } else {
+      setSelectedPhotos([...selectedPhotos, photoId]);
+    }
   };
+
+  const handleDeleteSelected = () => {
+    const updatedPhotos = photos.filter(
+      (photo) => !selectedPhotos.includes(photo.id)
+    );
+    setPhotos(updatedPhotos);
+    setSelectedPhotos([]);
+  };
+
   return (
     <div>
-      <h1>Galería de Fotos</h1>
-      <div>
+      <ul>
         {photos.map((photo) => (
-          <div className="photo" key={photo.id}>
-            <img src={photo.url} alt="Foto" />
-            <button onClick={() => deletePhoto(photo.id)}>Eliminar</button>
-          </div>
+          <li
+            key={photo.id}
+            onClick={() => handlePhotoClick(photo.id)}
+            style={{
+              cursor: "pointer",
+              textDecoration: selectedPhotos.includes(photo.id)
+                ? "line-through"
+                : "none",
+            }}
+          >
+            <img src={photo.url} alt={`Photo ${photo.id}`} />
+          </li>
         ))}
-      </div>
+      </ul>
+      <button onClick={handleDeleteSelected}>Eliminar seleccionados</button>
     </div>
   );
 };

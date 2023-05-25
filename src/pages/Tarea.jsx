@@ -8,7 +8,7 @@ import { Galeria } from "../ejercicio18/Galeria";
 
 export const Tarea = () => {
   return (
-    <div>
+    <div className="pages5">
       <Container>
         <Row>
           <Col>
