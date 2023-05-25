@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./css/lista.css";
 function TodoList() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState({
@@ -45,38 +45,39 @@ function TodoList() {
   };
 
   return (
-    <div>
+    <div className="">
       <h1>Lista de Tareas Pendientes</h1>
 
-      <form onSubmit={editIndex === -1 ? addTask : updateTask}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Nombre de la tarea"
-          value={newTask.name}
-          onChange={handleChange}
-          required
-        />
-        <textarea
-          name="description"
-          placeholder="Descripción de la tarea"
-          value={newTask.description}
-          onChange={handleChange}
-          required
-        ></textarea>
-        <input
-          type="date"
-          name="dueDate"
-          value={newTask.dueDate}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="submit"
-          value={editIndex === -1 ? "Agregar tarea" : "Actualizar tarea"}
-        />
-      </form>
-
+      <div className="form">
+        <form onSubmit={editIndex === -1 ? addTask : updateTask}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Nombre de la tarea"
+            value={newTask.name}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="description"
+            placeholder="Descripción de la tarea"
+            value={newTask.description}
+            onChange={handleChange}
+            required
+          ></textarea>
+          <input
+            type="date"
+            name="dueDate"
+            value={newTask.dueDate}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="submit"
+            value={editIndex === -1 ? "Agregar tarea" : "Actualizar tarea"}
+          />
+        </form>
+      </div>
       <h2>Tareas Pendientes</h2>
       <ul>
         {tasks.map((task, index) => (

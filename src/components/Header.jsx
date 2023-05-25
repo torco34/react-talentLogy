@@ -62,5 +62,9 @@ navbars.push({
 });
 navbars.push({
   to: "/pages4",
-  text: "Section3",
+  text: "Películas",
+});
+navbars.push({
+  to: "/pages5",
+  text: "Tablas",
 });

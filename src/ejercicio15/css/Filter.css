@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex-direction: column;
+  /* border: solid red 3px; */
+  padding: 20px;
+  ;
+}
+.div {
+  flex: 1 0 50px;
+  width: 100%;
+}
+.div input {
+  width: 100%;
+  padding: 10px;
+  /* border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px; */
+}
+ button {
+  /* width: 100%; */
+  padding: 20px;
+  background-color: #526d82
+  /* border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; */
+}
+.contenedor ul{
+    list-style: none;
+
+}

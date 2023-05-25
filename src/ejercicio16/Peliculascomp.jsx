@@ -4,9 +4,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Pelicula.css";
-export const Peliculascomp = () => {
-  const [peliculaSeleccionada, setPeliculaSeleccionada] = useState(null);
+import { BsFillStarFill } from "react-icons/bs";
 
+export const Peliculascomp = () => {
+  const [strings, setStrings] = useState(0);
+  const [peliculaSeleccionada, setPeliculaSeleccionada] = useState(null);
+  function string() {
+    setStrings(true);
+  }
   const mostrarDetallesPelicula = (pelicula) => {
     setPeliculaSeleccionada(pelicula);
   };
@@ -25,6 +30,16 @@ export const Peliculascomp = () => {
                 <img src={pelicula.img} alt={pelicula.name} />
                 {/* <p>Calificación: {pelicula.description} estrellas</p> */}
                 <br></br>
+                <div className="estrella">
+                  {Array(pelicula.string)
+                    .fill()
+                    .map((_, i) => (
+                      <BsFillStarFill onClick={string} />
+                    ))}
+
+                  {/* {strings} */}
+                </div>
+
                 <button
                   onClick={() => mostrarDetallesPelicula(pelicula)}
                   className="btn btn-dark"
@@ -45,6 +60,13 @@ export const Peliculascomp = () => {
                 />
                 <p>
                   Calificación: {peliculaSeleccionada.description} estrellas
+                </p>
+                <p className="estrella">
+                  {Array(peliculaSeleccionada.string)
+                    .fill()
+                    .map((_, i) => (
+                      <BsFillStarFill onClick={string} />
+                    ))}
                 </p>
                 <button
                   onClick={cerrarDetallesPelicula}
