@@ -45,7 +45,7 @@ export { Header };
 const navbars = [];
 
 navbars.push({
-  to: "react-talentLogy/index",
+  to: "/",
   text: "Carrito",
 });
 navbars.push({
