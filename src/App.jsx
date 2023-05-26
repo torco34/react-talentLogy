@@ -6,7 +6,7 @@ import { CarritoCompras } from "./pages/CarritoCompras";
 import { Books } from "./pages/Books";
 import { PagesEjercicio } from "./pages/PagesEjercicio";
 import { Pages4 } from "./pages/Pages4";
-import { Tarea } from "./pages/Tarea";
+import { Pages5 } from "./pages/Pages5";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/pages2" element={<Books />}></Route>
           <Route path="/pages3" element={<PagesEjercicio />}></Route>
           <Route path="/pages4" element={<Pages4 />}></Route>
-          <Route path="/pages5" element={<Tarea />}></Route>
+          <Route path="/pages5" element={<Pages5 />}></Route>
         </Routes>
       </Router>
     </>

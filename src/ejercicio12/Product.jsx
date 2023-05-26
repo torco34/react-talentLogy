@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export const Product = ({ product, addToCart }) => {
   return (
     <div>
-      <div className="card p-5">
+      <div className="card p-4">
         <img src={product.image} />
         <h3>{product.name}</h3>
         <p>Precio: {product.price}</p>

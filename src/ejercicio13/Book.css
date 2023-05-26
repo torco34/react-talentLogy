@@ -1,11 +1,9 @@
 .containerLibro {
-  /* border: solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
-
+  padding: 20px;
   background-color: #9db2bf;
   color: #27374d;
   /* border-radius: 10px;
@@ -14,8 +12,12 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px; */
 }
+.containerPadre {
+  padding: 50px;
+}
 .containerLibro img {
-  width: 80%;
+  width: 100%;
+  padding: 20px;
 }
 .containerLibro input {
   color: #27374d;
@@ -28,7 +30,7 @@
   font-size: 20px;
 }
 
-.containerLibro ul  {
+.containerLibro ul {
   text-decoration: none;
   list-style: none;
   padding: 0;

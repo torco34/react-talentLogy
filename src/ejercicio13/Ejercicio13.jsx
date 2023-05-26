@@ -13,7 +13,7 @@ export const Ejercicio13 = () => {
     event.target.comment.value = "";
   };
   return (
-    <div className="container ">
+    <div className="container containerPadre">
       <h2>Ejercicio 13</h2>
       <p className="">
         Crear un componente que reciba como propiedad un objeto con información

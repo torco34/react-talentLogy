@@ -1,8 +1,11 @@
 .name {
-  background-color: #e0be81;
+  background-color: #9db2bf;
+  padding: 20px;
 }
 .lista {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 .lista li {
   text-decoration: none;
@@ -14,12 +17,27 @@
 .lista p {
   text-decoration: none;
   list-style: none;
-  /* color: #025464; */
-  /* background-color: #E57C23; */
   cursor: pointer;
 }
+
+.body img {
+  width: 50%;
+  height: 30vh;
+  border-radius: 4%;
+  -webkit-border-radius: 4%;
+  -moz-border-radius: 4%;
+  -ms-border-radius: 4%;
+  -o-border-radius: 4%;
+}
 .body {
-  background-color: #e57c23;
-  color: aliceblue;
+  background-color: #526d82;
+  color: #dde6ed;
   padding: 20px;
+}
+.body span {
+  color: #dde6ed;
+  font-size: 30px;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
 }

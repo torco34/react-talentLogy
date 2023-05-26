@@ -5,7 +5,6 @@
   flex-direction: column;
   /* border: solid red 3px; */
   padding: 20px;
-  ;
 }
 .div {
   flex: 1 0 50px;
@@ -20,14 +19,13 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px; */
 }
- button {
-  
+button {
   padding: 20px;
-  background-color: #526d82
-
+  background-color: #526d82;
 }
-.contenedor ul{
-    list-style: none;
-    
-
+.contenedor ul {
+  list-style: none;
+}
+.containerh2 {
+  padding: 50px;
 }

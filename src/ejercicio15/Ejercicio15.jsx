@@ -26,8 +26,8 @@ export const Ejercicio15 = () => {
   ];
 
   return (
-    <div>
-      <h5>Ejercicio 15</h5>
+    <div className="containerh2">
+      <h2>Ejercicio 15</h2>
       <p>
         Crear un componente que reciba como propiedad una lista de noticias y
         permita filtrarlas por fecha, categoría y palabras clave.

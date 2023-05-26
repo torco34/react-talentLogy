@@ -55,10 +55,10 @@ export const Ejercicio12 = () => {
             </div>
           </Col>
           <Col>
-            <button onClick={showCart} className="btnCarrito">
-              <BsFillCartFill />
+            <div className="btnCarrito">
+              <BsFillCartFill onClick={showCart} />
               <span>{contador}</span>
-            </button>
+            </div>
             {!cartShow ? (
               <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
             ) : null}

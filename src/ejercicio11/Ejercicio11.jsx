@@ -2,9 +2,24 @@ import { List } from "./List";
 import "./index.css";
 export const Ejercicio11 = () => {
   const users = [
-    { id: 1, name: "John Doe", email: "john@example.com" },
-    { id: 2, name: "Jane Smith", email: "jane@example.com" },
-    { id: 3, name: "Bob Johnson", email: "bob@example.com" },
+    {
+      id: 1,
+      img: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Juli%C3%A1n_Rom%C3%A1n_in_2017_%282%29.jpg",
+      name: "Julian Roman",
+      email: "john@example.com",
+    },
+    {
+      id: 2,
+      img: "https://www.proimagenescolombia.com/photos/57291_1926_imagen__.png",
+      name: "Jhon Alex Toro",
+      email: "jhone@example.com",
+    },
+    {
+      id: 3,
+      img: "https://www.eltiempo.com/files/image_640_428/files/crop/uploads/2022/07/01/62bf57db86104.r_1656708540026.0-230-1418-939.jpeg",
+      name: "Diana Hoyos",
+      email: "diaob@example.com",
+    },
   ];
   return (
     <div>

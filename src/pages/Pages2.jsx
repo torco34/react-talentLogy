@@ -7,7 +7,7 @@ import { Ejercicio13 } from "../ejercicio13/Ejercicio13";
 
 export const Pages2 = () => {
   return (
-    <div className="pages">
+    <div className="pages2">
       <Container>
         <Row>
           <Col>

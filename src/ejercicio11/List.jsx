@@ -1,7 +1,13 @@
 import { useState } from "react";
 import "./index.css";
+import { BsX } from "react-icons/bs";
 export const List = ({ users }) => {
   const [selectedUser, setSelectedUser] = useState(null);
+  const [close, setClose] = useState();
+  // cerrar img
+  function closed() {
+    setSelectedUser(null);
+  }
   const handleUserClick = (user) => {
     setSelectedUser(user);
   };
@@ -17,10 +23,14 @@ export const List = ({ users }) => {
       </ul>
       {selectedUser && (
         <div className="body">
+          <span>
+            <BsX onClick={closed} />
+          </span>
+         
           <h2>Lista</h2>
+          <img src={selectedUser.img} alt="" />
           <p>Name: {selectedUser.name}</p>
           <p>Email: {selectedUser.email}</p>
-          {/* Render any other detailed user information here */}
         </div>
       )}
     </div>

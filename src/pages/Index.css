@@ -1,11 +1,13 @@
 .cuerpo {
-  background-color: #025464;
-  color: #fff;
+  background-color: #dde6ed;
+
+  color: #025464;
   padding: 20px;
 }
-.pages {
-  background-color: #025464;
-  color: #fff;
+.pages2 {
+  background-color: #dde6ed;
+  height: 95vh;
+  color: #025464;
 }
 .carrito {
   background-color: #025464;
@@ -19,17 +21,17 @@
   background-color: #dde6ed;
   height: 95vh;
   color: #025464;
-  padding: 60px;
+  /* padding: 60px; */
 }
 .pages4 {
   background-color: #dde6ed;
   height: 95vh;
   color: #025464;
-  padding: 60px;
+  /* padding: 60px; */
 }
 .pages5 {
   background-color: #dde6ed;
   height: 95vh;
   color: #025464;
-  padding: 60px;
+  /* padding: 60px; */
 }

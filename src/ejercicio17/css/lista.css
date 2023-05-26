@@ -1,9 +1,6 @@
 .form {
-  /* border: solid 3px red; */
-
   display: flex;
   flex-wrap: wrap;
-
   flex-direction: column;
   margin-top: 20px;
   padding: 30px;
@@ -34,4 +31,7 @@ ul{
   margin: 20px;
   background-color: #526d82;
   color: aliceblue;
+}
+.containerh2{
+  padding: 50px;
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Photo from "./Photo";
+import "./css/Img.css";
 export const Galeria = () => {
   const [selectedPhotos, setSelectedPhotos] = useState([]);
 
@@ -22,24 +23,21 @@ export const Galeria = () => {
   };
 
   return (
-    <div>
+    <div className="imagen">
       <ul>
         {photos.map((photo) => (
           <li
             key={photo.id}
             onClick={() => handlePhotoClick(photo.id)}
-            style={{
-              cursor: "pointer",
-              textDecoration: selectedPhotos.includes(photo.id)
-                ? "line-through"
-                : "none",
-            }}
+            className={selectedPhotos.includes(photo.id) ? "selected" : ""}
           >
             <img src={photo.url} alt={`Photo ${photo.id}`} />
           </li>
         ))}
       </ul>
-      <button onClick={handleDeleteSelected}>Eliminar seleccionados</button>
+      <button onClick={handleDeleteSelected} className="btn btn-secondary">
+        Eliminar seleccionados
+      </button>
     </div>
   );
 };

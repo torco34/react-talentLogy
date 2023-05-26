@@ -22,13 +22,13 @@ export const Peliculascomp = () => {
     <div className="">
       <Container>
         <Row>
-          <Col className="containerPelículas ">
+          <Col className="containerPelículass ">
             {peliculas.map((pelicula) => (
-              <div className="img" key={pelicula.id}>
+              <div className="divImage" key={pelicula.id}>
                 <h2>{pelicula.titulo}</h2>
                 <p>{pelicula.descripcion}</p>
                 <img src={pelicula.img} alt={pelicula.name} />
-                {/* <p>Calificación: {pelicula.description} estrellas</p> */}
+
                 <br></br>
                 <div className="estrella">
                   {Array(pelicula.string)
@@ -42,7 +42,7 @@ export const Peliculascomp = () => {
 
                 <button
                   onClick={() => mostrarDetallesPelicula(pelicula)}
-                  className="btn btn-dark"
+                  className="btn btn-secondary"
                 >
                   Ver detalles
                 </button>
@@ -51,7 +51,7 @@ export const Peliculascomp = () => {
           </Col>
           <Col>
             {peliculaSeleccionada ? (
-              <div className="imagen">
+              <div className="imagenPelicula">
                 <h2>{peliculaSeleccionada.name}</h2>
                 <p>{peliculaSeleccionada.descripcion}</p>
                 <img
@@ -70,7 +70,7 @@ export const Peliculascomp = () => {
                 </p>
                 <button
                   onClick={cerrarDetallesPelicula}
-                  className="btn btn-dark"
+                  className="btn btn-secondary"
                 >
                   Cerrar detalles
                 </button>

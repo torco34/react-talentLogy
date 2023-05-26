@@ -41,7 +41,7 @@ export { Header };
 const navbars = [];
 navbars.push({
   to: "/",
-  text: "Section1",
+  text: "Básicos",
 });
 navbars.push({
   to: "/pages",
@@ -58,7 +58,7 @@ navbars.push({
 });
 navbars.push({
   to: "/pages3",
-  text: "Países",
+  text: "Section3",
 });
 navbars.push({
   to: "/pages4",
@@ -66,5 +66,5 @@ navbars.push({
 });
 navbars.push({
   to: "/pages5",
-  text: "Tablas",
+  text: "section4",
 });
