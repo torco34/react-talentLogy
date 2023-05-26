@@ -14,9 +14,9 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Index />}></Route>
+          <Route path="/index" element={<Index />}></Route>
           <Route path="/pages" element={<Pages2 />}></Route>
-          <Route path="/pages1" element={<CarritoCompras />}></Route>
+          <Route path="/" element={<CarritoCompras />}></Route>
           <Route path="/pages2" element={<Books />}></Route>
           <Route path="/pages3" element={<PagesEjercicio />}></Route>
           <Route path="/pages4" element={<Pages4 />}></Route>

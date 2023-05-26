@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Header.css";
+import { BsGithub } from "react-icons/bs";
+
 NavLink;
 function Header() {
   return (
@@ -10,8 +12,6 @@ function Header() {
       <Container>
         <Navbar bg="light" expand="lg">
           <Container>
-            <Link to="/home"></Link>
-
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="m-auto  link">
                 {navbars.map((navbar) => (
@@ -29,7 +29,11 @@ function Header() {
                 ))}
               </Nav>
             </Navbar.Collapse>
-
+            <Link to="https://github.com/torco34/react-talentLogy">
+             <span>
+             <BsGithub />
+             </span>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
           </Container>
         </Navbar>
@@ -41,7 +45,7 @@ export { Header };
 const navbars = [];
 
 navbars.push({
-  to: "/pages1",
+  to: "/",
   text: "Carrito",
 });
 navbars.push({
@@ -66,6 +70,6 @@ navbars.push({
 });
 
 navbars.push({
-  to: "/",
+  to: "/index",
   text: "Básicos",
 });

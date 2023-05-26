@@ -25,8 +25,8 @@ export const CountryData = ({ dataLibro }) => {
             </ul>
             {selectedCountry && (
               <div>
-                <h2>Información detallada:</h2>
-                <h3>{selectedCountry.name}</h3>
+                <h5>Información detallada:</h5>
+                <h5 className="text-dark">{selectedCountry.name}:</h5>
                 <p>{selectedCountry.culture}</p>
                 <p>{selectedCountry.history}</p>
                 <p>{selectedCountry.language}</p>
