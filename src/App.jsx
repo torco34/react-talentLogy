@@ -14,7 +14,10 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="*" element={<CarritoCompras />}></Route>
+          <Route
+            path="react-talentLogy/index"
+            element={<CarritoCompras />}
+          ></Route>
           <Route path="/index" element={<Index />}></Route>
           <Route path="/pages" element={<Pages2 />}></Route>
           <Route path="/pages2" element={<Books />}></Route>

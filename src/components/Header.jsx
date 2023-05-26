@@ -30,9 +30,9 @@ function Header() {
               </Nav>
             </Navbar.Collapse>
             <Link to="https://github.com/torco34/react-talentLogy">
-             <span>
-             <BsGithub />
-             </span>
+              <span>
+                <BsGithub />
+              </span>
             </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
           </Container>
@@ -45,7 +45,7 @@ export { Header };
 const navbars = [];
 
 navbars.push({
-  to: "/",
+  to: "react-talentLogy/index",
   text: "Carrito",
 });
 navbars.push({
