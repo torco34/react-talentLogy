@@ -39,14 +39,6 @@ function Header() {
 }
 export { Header };
 const navbars = [];
-navbars.push({
-  to: "/",
-  text: "Básicos",
-});
-navbars.push({
-  to: "/pages",
-  text: "Section2",
-});
 
 navbars.push({
   to: "/pages1",
@@ -57,14 +49,23 @@ navbars.push({
   text: "Books",
 });
 navbars.push({
-  to: "/pages3",
-  text: "Section3",
-});
-navbars.push({
   to: "/pages4",
   text: "Películas",
 });
 navbars.push({
   to: "/pages5",
-  text: "section4",
+  text: "section2",
+});
+navbars.push({
+  to: "/pages",
+  text: "Section3",
+});
+navbars.push({
+  to: "/pages3",
+  text: "Section4",
+});
+
+navbars.push({
+  to: "/",
+  text: "Básicos",
 });

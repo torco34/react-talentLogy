@@ -23,10 +23,10 @@ export const Ejercicio12 = () => {
     setContador(contador - 1);
   };
   function showCart() {
-    if (cartShow) {
-      setCartShow(false);
-    } else {
+    if (!cartShow) {
       setCartShow(true);
+    } else {
+      setCartShow(false);
     }
   }
 
@@ -59,7 +59,7 @@ export const Ejercicio12 = () => {
               <BsFillCartFill onClick={showCart} />
               <span>{contador}</span>
             </div>
-            {!cartShow ? (
+            {cartShow ? (
               <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
             ) : null}
           </Col>
