@@ -45,7 +45,7 @@ export { Header };
 const navbars = [];
 
 navbars.push({
-  to: "/carrito",
+  to: "/",
   text: "Carrito",
 });
 navbars.push({
